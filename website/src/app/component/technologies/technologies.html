@@ -1,0 +1,41 @@
+<section class="bg-deep-slate w-100 d-flex px-2 min-vh-100">
+
+  <div class="d-flex flex-column w-100 gap-5" style="margin-top: 96px">
+
+    <div class="d-flex flex-column w-100">
+      <p class="main-font text-mist ls-wide fs-6  mb-3">EXPERTISE & TOOLS</p>
+      <h1 class="title-font text-mist " style="font-size: 3rem; margin-bottom: -10px">Developer</h1>
+      <h1 class="title-font text-mist m-0" style="font-size: 3rem"><span class="text-ocean">TECH STECK</span> OVERVIEW
+      </h1>
+    </div>
+
+    <div class="spacing-border col-md-1 " style="margin-bottom: 24px; margin-top: -40px"></div>
+
+    <p class="main-font text-mist">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+      Ipsum has been the industry's
+      standard dummy text ever since the 1500s,</p>
+
+    <div class="d-flex flex-row overflow-hidden justify-content-evenly">
+      @for (project of projects; track project.id) {
+        <div class="card project-card border-0 p-4 shadow-sm col-md-3" style="background: rgba(31,42,45,0.92)">
+          <div class="card-body p-0 mb-0">
+            <h3 class="title-font bold mb-4 fs-3 ls-wide text-white">{{ project.title }}</h3>
+
+            <p class="card-text main-font text-secondary mb-5 lh-lg text-mist">{{ project.content }}</p>
+
+            <div class="d-flex gap-1 mt-auto position-relative flex-wrap justify-content-center">
+              @for (technology of project.technologies; track technology) {
+                <div class="d-flex gap-2 z-1 ">
+                  <span
+                    class="badge rounded-2 bg-light text-mist bg-deep-slate px-3 py-2">{{ technology }}</span>
+                </div>
+              }
+            </div>
+
+          </div>
+        </div>
+      }
+    </div>
+
+  </div>
+</section>
