@@ -309,10 +309,10 @@
   dependencies:
     tslib "^2.3.0"
 
-"@angular/platform-server@^21.0.0":
-  version "21.1.4"
-  resolved "https://registry.yarnpkg.com/@angular/platform-server/-/platform-server-21.1.4.tgz#778519efe50d61620c1b8c387f7a56b14fb595e3"
-  integrity sha512-Ja/bs+ZaPsN3OQi+C4cqACS3o46z7Z206SWRmEltYjaG9f9kPbKgIPuALbsTo/7iaq6jyPUH4ERErSwoj7K1qw==
+"@angular/platform-server@21.1.0-rc.0":
+  version "21.1.0-rc.0"
+  resolved "https://registry.yarnpkg.com/@angular/platform-server/-/platform-server-21.1.0-rc.0.tgz#aac2e6281e9b1e5b5dec909ee58be7916f9e8dd1"
+  integrity sha512-+iKbNPXYqUktufLsVKI+dYg9U+ywbFhXOR5BSG4blN8QkyGqY80Dnt6pn7wMJSmrsz25+aUf9+8wSZkfBEkZWA==
   dependencies:
     tslib "^2.3.0"
     xhr2 "^0.2.0"
@@ -324,7 +324,7 @@
   dependencies:
     tslib "^2.3.0"
 
-"@angular/ssr@^21.0.1":
+"@angular/ssr@^21.1.4":
   version "21.1.4"
   resolved "https://registry.yarnpkg.com/@angular/ssr/-/ssr-21.1.4.tgz#8de2db824b4989a5a2f8e1d851dcf722c3c49386"
   integrity sha512-KUKEuZPS9NOeN0mmlG7nld9U9cxDfqR0DG/Kf2QglfoiTmEXundytrC27u63feIby2hULR7mQWZ+Ouj9Hh78NQ==
@@ -1474,6 +1474,11 @@
     "@parcel/watcher-win32-ia32" "2.5.6"
     "@parcel/watcher-win32-x64" "2.5.6"
 
+"@popperjs/core@^2.11.8":
+  version "2.11.8"
+  resolved "https://registry.yarnpkg.com/@popperjs/core/-/core-2.11.8.tgz#6b79032e760a0899cd4204710beede972a3a185f"
+  integrity sha512-P1st0aksCrn9sGZhp8GMYwBnQsbvAWsZAX44oXNNvLHGqAOcoVxmjZiohstwQ7SqKnbR47akdNi+uleWD8+g6A==
+
 "@rolldown/binding-android-arm64@1.0.0-beta.58":
   version "1.0.0-beta.58"
   resolved "https://registry.yarnpkg.com/@rolldown/binding-android-arm64/-/binding-android-arm64-1.0.0-beta.58.tgz#7d747001348130a85bc95590ef823d1af2673fcb"
@@ -2165,6 +2170,11 @@ boolbase@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/boolbase/-/boolbase-1.0.0.tgz#68dff5fbe60c51eb37725ea9e3ed310dcc1e776e"
   integrity sha512-JZOSA7Mo9sNGB8+UjSgzdLtokWAky1zbztM3WRLCbZ70/3cTANmQmOdR7y2g+J0e2WXywy1yS468tY+IruqEww==
+
+bootstrap@^5.3.8:
+  version "5.3.8"
+  resolved "https://registry.yarnpkg.com/bootstrap/-/bootstrap-5.3.8.tgz#6401a10057a22752d21f4e19055508980656aeed"
+  integrity sha512-HP1SZDqaLDPwsNiqRqi5NcP0SSXciX2s9E+RyqJIIqGo+vJeN5AJVM98CXmW/Wux0nQ5L7jeWUdplCEf0Ee+tg==
 
 browserslist@^4.24.0, browserslist@^4.26.0:
   version "4.28.1"
@@ -4590,3 +4600,8 @@ zod@4.3.5:
   version "4.3.6"
   resolved "https://registry.yarnpkg.com/zod/-/zod-4.3.6.tgz#89c56e0aa7d2b05107d894412227087885ab112a"
   integrity sha512-rftlrkhHZOcjDwkGlnUtZZkvaPHCsDATp4pGpuOOMDaTdDDXF91wuVDJoWoPsKX/3YPQ5fHuF3STjcYyKr+Qhg==
+
+zone.js@^0.16.0:
+  version "0.16.0"
+  resolved "https://registry.yarnpkg.com/zone.js/-/zone.js-0.16.0.tgz#955b9e28846d76ca2ef7091c8f9e96f35f79e828"
+  integrity sha512-LqLPpIQANebrlxY6jKcYKdgN5DTXyyHAKnnWWjE5pPfEQ4n7j5zn7mOEEpwNZVKGqx3kKKmvplEmoBrvpgROTA==
