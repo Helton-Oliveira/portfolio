@@ -1,0 +1,244 @@
+@use "bootstrap/scss/bootstrap" as *;
+@import "@fortawesome/fontawesome-free/css/all.min.css";
+
+:root {
+  --bs-body-font-family: "Karla", sans-serif;
+  --fonte-main: "Inconsolata", monospace;
+
+  --color-deep-slate: #171F22;
+  --color-mist-blue: #C1D1CF;
+  --color-stone-gray: #636467;
+  --color-ocean-muted: #748B91;
+  --color-forest-dark: #666B64;
+  --color-bg-sec: #F9FAFB;
+
+  --bs-primary: var(--color-ocean-muted);
+  --bs-secondary: var(--color-stone-gray);
+  --bs-dark: var(--color-deep-slate);
+  --bs-light: var(--color-mist-blue);
+
+  --bg-portfolio-main: var(--color-deep-slate);
+  --text-portfolio-muted: var(--color-stone-gray);
+}
+
+.text-mist {
+  color: var(--color-mist-blue) !important;
+}
+
+.text-stone {
+  color: var(--color-stone-gray) !important;
+}
+
+.text-ocean {
+  color: var(--color-ocean-muted) !important;
+}
+
+/* --- CLASSES UTILITÁRIAS DE BACKGROUND --- */
+.bg-deep-slate {
+  background-color: var(--color-deep-slate) !important;
+}
+
+.bg-ocean {
+  background-color: var(--color-ocean-muted) !important;
+}
+
+.bg-mist {
+  background-color: var(--bs-light) !important;
+}
+
+.bg-hero-waves {
+  background-image: linear-gradient(rgba(23, 31, 34, 0.94), rgba(23, 31, 34, 0.94)),
+  url('assets/images/cricuit-waves.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: var(--color-mist-blue);
+}
+
+.ls-wide {
+  letter-spacing: 0.15rem;
+}
+
+.main-font {
+  font-family: var(--fonte-main) !Important;
+}
+
+.title-font {
+  font-family: var(--bs-body-font-family) !Important;
+}
+
+.spacing-border {
+  border: 1px solid var(--color-ocean-muted);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+
+  &::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background-color: var(--color-ocean-muted);
+
+    transition: width 0.3s ease-in-out;
+  }
+
+  &:hover::after {
+    width: 100%;
+  }
+}
+
+.bg-sec {
+  background: var(--color-bg-sec);
+}
+
+.btn-category {
+  background-color: transparent;
+  color: #333;
+  border: none;
+  padding: 8px 24px;
+  border-radius: 50px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+
+  &:hover {
+    background-color: #1a1a1a;
+    color: #fff;
+  }
+
+  &.active {
+    background-color: #0d0d0d !important;
+    color: #fff !important;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  }
+}
+
+@mixin dynamic-background($image-path, $overlay-opacity: 0.7) {
+  background-size: cover;
+  background: linear-gradient(
+      rgba(23, 31, 34, $overlay-opacity),
+      rgba(23, 31, 34, $overlay-opacity)
+  ) url($image-path) center;
+}
+
+.project-card {
+  background-color: #f8f9fa;
+  border-radius: 20px;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: translateY(-5px);
+    cursor: pointer;
+  }
+
+  .card-title {
+    color: #0b1320;
+    font-size: 1.75rem;
+  }
+
+  .badge {
+    font-size: 0.65rem;
+    letter-spacing: 1px;
+    font-weight: 700;
+  }
+}
+
+.project-number {
+  position: absolute;
+  right: -10px;
+  bottom: -30px;
+  font-size: 8rem;
+  font-weight: 800;
+  color: rgba(0, 0, 0, 0.05);
+  user-select: none;
+  z-index: 0;
+}
+
+.z-1 {
+  z-index: 1;
+}
+
+.indicator {
+  width: 40px;
+  height: 3px;
+  background-color: #e0e0e0;
+  border-radius: 2px;
+  transition: all 0.4s ease;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #adb5bd;
+  }
+
+  &.active {
+    background-color: #212529;
+    width: 50px;
+  }
+}
+
+.italic {
+  font-style: italic;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+footer {
+  flex-shrink: 0;
+
+  .footer-links {
+    a {
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 1px;
+      transition: color 0.3s ease;
+
+      i {
+        font-size: 1.1rem;
+      }
+
+      &:hover {
+        color: #000 !important;
+      }
+    }
+  }
+
+  .ls-wide {
+    letter-spacing: 0.15rem;
+  }
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: var(--bs-body-font-family) !important;
+}
+
+h1, h2, h3, h4, h5, h6, .display-1, .display-2 {
+  font-family: var(--fonte-main) !important;
+}
+
+header {
+  z-index: 1030;
+  transition: all 0.3s ease-in-out;
+}
+

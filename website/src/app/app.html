@@ -1,0 +1,61 @@
+<header class="d-flex fixed-top bg-light text-light w-100 main-font px-4 align-items-center ">
+  <img fetchpriority="high" src="./assets/images/light-mode.svg" class="w-25" alt="logo empresa"/>
+  <nav class="d-flex justify-content-end text-dark w-100 gap-3">
+    <div><a href="#home">HOME</a></div>
+    <div><a href="#projects">PROJECTS</a></div>
+    <div><a href="#about">ABOUT</a></div>
+    <div><a href="#tech">TECHNOLOGIES</a></div>
+    <div><a>CONTACT</a></div>
+  </nav>
+</header>
+
+<main class="d-flex flex-column w-100" style="min-height: 80vh;">
+  <app-hero-page id="home"/>
+  <app-projects id="projects"/>
+  <app-about-me id="about"/>
+  <app-technologies id="tech"/>
+  <app-phrases/>
+</main>
+
+<footer class="bg-white py-5 border-top w-100 mt-auto">
+  <div class="container">
+    <div class="row align-items-start mb-5">
+
+      <div class="col-md-6 align-items-center">
+        <div class="footer-logo mb-3">
+          <img src="assets/images/logo-light-icon.png" alt="icone da empresa" style="width: 10%"/>
+        </div>
+        <p class="main-font text-secondary w-75" style="font-size: 0.9rem; line-height: 1.6;">
+          Engineering scalable digital products for innovators and industry leaders worldwide.
+        </p>
+      </div>
+
+      <div class="col-md-6 text-md-end mt-4 mt-md-0">
+        <p class="main-font mb-4" style="font-size: 0.85rem; color: #4B5563;">
+          Expertly crafted with <span class="fw-bold text-dark">Angular & Full-Stack Passion</span>
+        </p>
+
+        <div class="d-flex justify-content-md-end gap-4 footer-links">
+          <a href="#" class="text-decoration-none text-secondary d-flex align-items-center gap-2">
+            <i class="bi bi-github"></i> GITHUB
+          </a>
+          <a href="#" class="text-decoration-none text-secondary d-flex align-items-center gap-2">
+            <i class="bi bi-envelope"></i> CONTACT
+          </a>
+          <a href="#" class="text-decoration-none text-secondary d-flex align-items-center gap-2">
+            <i class="bi bi-linkedin"></i> LINKEDIN
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="row border-top pt-4">
+      <div class="col-12 text-center">
+        <p class="text-uppercase ls-wide text-secondary" style="font-size: 0.7rem; letter-spacing: 2px;">
+          © 2026 DIGISPHERE. ALL RIGHTS RESERVED.
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
