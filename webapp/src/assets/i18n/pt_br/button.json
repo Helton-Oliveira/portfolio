@@ -1,0 +1,9 @@
+{
+  "button": {
+    "new": "Novo",
+    "save": "Salvar",
+    "cancel": "Cancelar",
+    "add": "Adicionar",
+    "filter": "Filtrar"
+  }
+}

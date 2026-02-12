@@ -1,0 +1,46 @@
+{
+  "global": {
+    "field": {
+      "id": "ID",
+      "new": "Novo",
+      "status": "Status",
+      "name": "Nome",
+      "age": "Idade",
+      "email": "Email",
+      "password": "Senha",
+      "function": "Função",
+      "required": "Campo {{field}} é obrigatório",
+      "welcome": "Bem vindo de volta, {{ name }}!",
+      "profession": "{{ profession }}",
+      "logout": "Sair",
+      "rememberMe": "Lembrar de mim",
+      "forgotPassword": "Esqueceu a senha?",
+      "createAccount": "Criar conta",
+      "dontHaveAnAccount": "Não possio uma conta?",
+      "day": "Dia",
+      "next": "Próxima",
+      "previous": "Anterior",
+      "confirm": "Confirmar",
+      "error": "Erro",
+      "success": "Sucesso"
+    },
+    "role": {
+      "ADMIN": "Administrador",
+      "MANAGER": "Gerente",
+      "CLIENT": "Cliente",
+      "RECEPTIONIST": "Recepcionista",
+      "VETERINARIAN": "Veterinario",
+      "GROOMER": "Tosador",
+      "NOT_INFORMED": "Não Informado"
+    },
+    "day": {
+      "MONDAY": "Segunda",
+      "TUESDAY": "Terça",
+      "WEDNESDAY": "Quarta",
+      "THURSDAY": "Quinta",
+      "FRIDAY": "Sexta",
+      "SATURDAY": "Sabado",
+      "SUNDAY": "Domingo"
+    }
+  }
+}
