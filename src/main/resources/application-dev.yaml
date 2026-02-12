@@ -1,5 +1,5 @@
 server:
-  port: 8080
+  port: 8081
   address: 0.0.0.0
 
 spring:
@@ -7,7 +7,7 @@ spring:
     banner-mode: off
 
   application:
-    name: "Vita Pet Care"
+    name: "Portfolio"
 
   mail:
     host: smtp.mailtrap.io
@@ -29,7 +29,7 @@ spring:
             enable: true
 
   datasource:
-    url: jdbc:postgresql://localhost:5432/vitapetcare
+    url: jdbc:postgresql://localhost:5432/portfolio
     username: postgres
     password: postgres
     driverClassName: org.postgresql.Driver

@@ -25,22 +25,7 @@
       "success": "Sucesso"
     },
     "role": {
-      "ADMIN": "Administrador",
-      "MANAGER": "Gerente",
-      "CLIENT": "Cliente",
-      "RECEPTIONIST": "Recepcionista",
-      "VETERINARIAN": "Veterinario",
-      "GROOMER": "Tosador",
-      "NOT_INFORMED": "Não Informado"
-    },
-    "day": {
-      "MONDAY": "Segunda",
-      "TUESDAY": "Terça",
-      "WEDNESDAY": "Quarta",
-      "THURSDAY": "Quinta",
-      "FRIDAY": "Sexta",
-      "SATURDAY": "Sabado",
-      "SUNDAY": "Domingo"
+      "ADMIN": "Administrador"
     }
   }
 }

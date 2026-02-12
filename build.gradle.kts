@@ -5,7 +5,7 @@ plugins {
 }
 
 
-group = "com.exampledigisphere"
+group = "com.digisphere"
 version = "0.0.1-SNAPSHOT"
 description = "Demo project for Spring Boot"
 

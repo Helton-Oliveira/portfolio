@@ -1,7 +1,10 @@
 package com.exampledigisphere.vitapetcare.catalog.job;
 
-import com.exampledigisphere.vitapetcare.admin.status.Status;
-import com.exampledigisphere.vitapetcare.auth.roles.Role;
+import com.exampledigisphere.portfolio.admin.status.Status;
+import com.exampledigisphere.portfolio.auth.roles.Role;
+import com.exampledigisphere.portfolio.catalog.job.Job;
+import com.exampledigisphere.portfolio.catalog.job.JobService;
+import com.exampledigisphere.portfolio.catalog.job.JobType;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;

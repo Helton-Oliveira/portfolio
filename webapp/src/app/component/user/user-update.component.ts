@@ -13,14 +13,6 @@ import {FileUploadService} from '../../shared/services/img/FileUploadService';
 import {FileApp, IFileApp} from '../../shared/models/file/file-app-model';
 import {FileType} from '../../shared/models/file/file-type';
 import {NgxDropzoneModule} from 'ngx-dropzone';
-import {WorkDayEditorModalService} from './workDayModal/work-day-editor-modal-service';
-import {WorkDay} from '../../shared/models/workDay/work-day-model';
-import {
-  MatAccordion,
-  MatExpansionPanel,
-  MatExpansionPanelHeader,
-  MatExpansionPanelTitle
-} from '@angular/material/expansion';
 
 @Component({
   selector: 'app-dashboard',
@@ -30,10 +22,6 @@ import {
     CommonModule,
     TranslateModule,
     NgxDropzoneModule,
-    MatAccordion,
-    MatExpansionPanel,
-    MatExpansionPanelHeader,
-    MatExpansionPanelTitle,
     NgOptimizedImage,
   ]
 })
@@ -45,7 +33,6 @@ export class UserUpdateComponent implements OnInit {
   private fb = inject(FormBuilder);
   private route = inject(ActivatedRoute);
   private fileUploadService = inject(FileUploadService);
-  private workDayEditorModalService = inject(WorkDayEditorModalService);
 
   user: User = new User();
   roles: Role[] = Object.values(Role);
@@ -124,38 +111,6 @@ export class UserUpdateComponent implements OnInit {
       });
   }
 
-  addWorkDay($event?: any) {
-    $event?.stopPropagation();
-    this.workDayEditorModalService.show(
-      this.user, undefined,
-      (workDay) => {
-        this.user.workDays = [...(this.user.workDays || []), workDay];
-        this.markFormAsChanged();
-      }
-    );
-  }
-
-  editWorkDay(workDay: WorkDay) {
-    this.workDayEditorModalService.show(
-      this.user, workDay,
-      (updatedWorkDay) => {
-        this.user.workDays = this.user.workDays?.map(day =>
-          day.uuid === updatedWorkDay.uuid ? updatedWorkDay : day
-        );
-        this.markFormAsChanged();
-      }
-    )
-  }
-
-  deleteWorkDay(uuid: string): void {
-    this.user.workDays?.filter(wk => wk.uuid === uuid)
-      .forEach(wk => {
-        wk.active = false
-        wk.edited = true
-      });
-    this.markFormAsChanged();
-  }
-
   private updateUser() {
     this.user = {
       ...this.user,
@@ -164,7 +119,6 @@ export class UserUpdateComponent implements OnInit {
       password: this.form.value.password,
       role: this.form.value.role,
       files: [this.fileApp],
-      workDays: this.user.workDays,
       edited: true,
       active: true
     } as User;
@@ -202,13 +156,5 @@ export class UserUpdateComponent implements OnInit {
     this.form.markAsDirty();
     this.form.updateValueAndValidity({emitEvent: false});
     this.setup();
-  }
-
-  getWorkDaysActive(): WorkDay[] | undefined {
-    return this.user.workDays?.filter(wk => wk.active);
-  }
-
-  existsWorkDayActive(): boolean | undefined {
-    return this.user.workDays?.some(wk => wk.active);
   }
 }

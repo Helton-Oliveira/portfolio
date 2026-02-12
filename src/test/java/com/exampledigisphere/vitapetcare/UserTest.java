@@ -1,11 +1,11 @@
 package com.exampledigisphere.vitapetcare;
 
-import com.exampledigisphere.vitapetcare.admin.user.UserDTO;
-import com.exampledigisphere.vitapetcare.admin.user.UserFactory;
-import com.exampledigisphere.vitapetcare.admin.user.UserService;
-import com.exampledigisphere.vitapetcare.admin.user.domain.User;
-import com.exampledigisphere.vitapetcare.admin.user.domain.UserAssociations;
-import com.exampledigisphere.vitapetcare.admin.user.repository.UserRepository;
+import com.exampledigisphere.portfolio.admin.user.UserDTO;
+import com.exampledigisphere.portfolio.admin.user.UserFactory;
+import com.exampledigisphere.portfolio.admin.user.UserService;
+import com.exampledigisphere.portfolio.admin.user.domain.User;
+import com.exampledigisphere.portfolio.admin.user.domain.UserAssociations;
+import com.exampledigisphere.portfolio.admin.user.repository.UserRepository;
 import org.hibernate.Hibernate;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
