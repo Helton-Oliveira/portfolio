@@ -1,0 +1,23 @@
+<section class="bg-light w-100 d-flex align-items-center py-5 min-vh-75">
+  <div class="container d-flex flex-column align-items-center text-center">
+
+    <div class="d-flex flex-column col-lg-8 mb-5">
+      <h2 class="title-font italic text-dark lh-base" style="font-size: 2.2rem; font-weight: 400;">
+        "Code is like humor. When you have to explain it, it's bad. We strive for elegant, self-documenting solutions
+        that scale."
+      </h2>
+      <p class="main-font sm ls-wide text-uppercase mt-4" style="color: #6c757d; font-size: 0.75rem;">
+        — DigiSphere Philosophy
+      </p>
+    </div>
+
+    <div class="d-flex flex-row justify-content-center gap-2 mt-4">
+      @for (quote of quotes; track $index) {
+        <div class="indicator"
+             [class.active]="currentIndex === $index"
+             (click)="currentIndex = $index">
+        </div>
+      }
+    </div>
+  </div>
+</section>
